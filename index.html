@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv = "X-UA-Compatible" content="IE=edge" />
+    <title>タイピングゲーム</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="timer" id="timer">30</div>
+    <div id="game" class="container">
+      <span id="typeDisplay" class="marker"></span>
+      <span id="type-Question">ここに表示される</span><!-- <span id="type-Input">ここに表示される</span> -->
+      <div class="type-display" id="typeDisplay"></div>
+      <textarea class="type-Input" id="typeArea" autofocus></textarea>
+    </div>
+
+    <div id="message" class="text-coontainar hidden">
+      <div class="message">
+        クリア！お疲れ様でした!<br />
+        <button id="replayBtn" class="button">もう一度プレイする</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
