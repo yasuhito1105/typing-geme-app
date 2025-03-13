@@ -89,13 +89,13 @@
 // ここからAPIを使わないコードを書く
 // 表示する問題文の記述
 const questions = [
-  'JavaScript',
-  'document',
-  'const',
+  // 'JavaScript',
+  // 'document',
+  // 'const',
   'let',
-  'console',
-  'addEventListener',
-  'getElementById',
+  // 'console',
+  // 'addEventListener',
+  // 'getElementById',
   // 'split',
   // 'Math',
   // 'click',
@@ -117,6 +117,8 @@ let currentKer;
 let currentText;
 let startTime;
 let time;
+let intervalId;
+let gameStarted = false; // ゲームが開始されたかどうかを追跡する変数
 // タイマー関数
 const timer = () => {
   time = ((Date.now() - startTime) / 1000).toFixed(2);
@@ -141,9 +143,19 @@ const setQuestion = () =>{
   typeDisplayTextWords = [];
   typeInputTextWords = currentText.split('');
 };
+
+//ゲーム開始関数
+const startGame = () => {
+  gameStarted = true;
+  startTime = Date.now();
+  intervalId = setInterval(timer, 10);
+  typeArea.focus(); // テキストエリアにフォーカスを当てる
+};
 setQuestion();
 
 typeArea.addEventListener('input', (e) => {
+  if (!gameStarted) return; // ゲームが開始されていない場合は何もしない
+
   if (typeInputTextWords[0] === e.data) {
     typeDisplayTextWords.push(typeInputTextWords[0]);
     typeInputTextWords.shift();
@@ -168,10 +180,14 @@ typeArea.addEventListener('input', (e) => {
       }
   }
 });
-
+document.addEventListener('keydown', (e) => {
+  if (!gameStarted && (e.key === 'Enter' || e.key === ' ')) {
+    startGame();
+  }
+});
 replayBtn.addEventListener('click', () => {
   window.location.reload();
 });
 // ゲーム開始時の処理
 startTime = Date.now();
-const intervalId = setInterval(timer, 10);
+// const intervalId = setInterval(timer, 10);
