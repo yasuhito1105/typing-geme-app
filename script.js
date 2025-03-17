@@ -100,6 +100,7 @@ const questions = [
   // 'Math',
   // 'click',
   // 'log',
+  'function',
 ];
 
 const typeDisplay = document.getElementById('typeDisplay');
