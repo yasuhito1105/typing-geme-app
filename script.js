@@ -120,11 +120,14 @@ let startTime;
 let time;
 let intervalId;
 let gameStarted = false; // ゲームが開始されたかどうかを追跡する変数
+
+
 // タイマー関数
 const timer = () => {
   time = ((Date.now() - startTime) / 1000).toFixed(2);
   timerLabel.textContent = time;
 };
+
 // 新しい問題文をセットする記述
 const setQuestion = () =>{
 
@@ -186,6 +189,7 @@ document.addEventListener('keydown', (e) => {
     startGame();
   }
 });
+// もう一度プレイするボタンの機能
 replayBtn.addEventListener('click', () => {
   window.location.reload();
 });
