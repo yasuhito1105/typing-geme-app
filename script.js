@@ -93,6 +93,7 @@ const questions = [
   'document',
   // 'const',
   'let',
+  // 'var',
   // 'console',
   // 'addEventListener',
   // 'getElementById',
