@@ -102,6 +102,7 @@ const questions = [
   // 'click',
   // 'log',
   'function',
+  'for',
 ];
 
 const typeDisplay = document.getElementById('typeDisplay');
