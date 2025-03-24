@@ -93,7 +93,7 @@ const questions = [
   'document',
   // 'const',
   'let',
-  // 'var',
+  // 'var',//varはあまり使われてない定数
   // 'console',
   // 'addEventListener',
   // 'getElementById',
@@ -186,9 +186,11 @@ typeArea.addEventListener('input', (e) => {
       }
   }
 });
+// 最初のエンターかスペースでスタートする記述
 document.addEventListener('keydown', (e) => {
   if (!gameStarted && (e.key === 'Enter' || e.key === ' ')) {
     startGame();
+    e.preventDefault(); //デフォルトの動作をキャンセル
   }
 });
 // もう一度プレイするボタンの機能
