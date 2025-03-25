@@ -91,7 +91,7 @@
 const questions = [
   // 'JavaScript',
   'document',
-  // 'const',
+  'const',
   'let',
   // 'var',//varはあまり使われてない定数
   // 'console',
