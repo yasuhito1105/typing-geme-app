@@ -73,4 +73,8 @@ body {
 .timer {
   font-size: 30px;
   margin-bottom: 50px;
+  position: absolute;
+  top: 20%;
+  left:47%
+
 }
