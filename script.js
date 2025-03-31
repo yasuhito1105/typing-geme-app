@@ -182,7 +182,6 @@ typeArea.addEventListener('input', (e) => {
           setQuestion(); //新しい問題文をセット
         }
         // console.log('クリア');
-        // setQuestion();
       }
   }
 });
