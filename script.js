@@ -90,8 +90,8 @@
 // 表示する問題文の記述
 const questions = [
   // 'JavaScript',
-  'document',
-  'const',
+  // 'document',
+  // 'const',
   'let',
   // 'var',//varはあまり使われてない定数
   // 'console',
@@ -101,7 +101,7 @@ const questions = [
   // 'Math',
   // 'click',
   // 'log',
-  'function',
+  // 'function',
   'for',
 ];
 
