@@ -100,7 +100,7 @@ const questions = [
   // 'split',
   // 'Math',
   // 'click',
-  // 'log',
+  'log',
   // 'function',
   'for',
 ];
