@@ -152,12 +152,13 @@ const setQuestion = () =>{
 
 //ゲーム開始関数
 const startGame = () => {
+  setQuestion();
   gameStarted = true;
   startTime = Date.now();
   intervalId = setInterval(timer, 10);
   typeArea.focus(); // テキストエリアにフォーカスを当てる
 };
-setQuestion();
+
 
 typeArea.addEventListener('input', (e) => {
   if (!gameStarted) return; // ゲームが開始されていない場合は何もしない
