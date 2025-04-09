@@ -17,3 +17,5 @@ Playing this game allows you to develop your typing speed and accuracy.
 2:After you finish typing all the displayed characters, the text changes, and a new set of characters appears.
 3:Clearing a certain number of questions results in game clear!
 
+##環境  environment
+言語 language  Javascript html.css
