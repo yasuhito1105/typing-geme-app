@@ -13,7 +13,7 @@ Playing this game allows you to develop your typing speed and accuracy.
 2:表示された全ての文字を打ち終えると表示が切り替わり新たな文字が表示される
 3:何問か解答できるとゲームクリア！
 
-1:Pressing the Enter key or Spacebar starts the game, and you type the displayed function or method name.
+1:Pressing the Enter key or Space key starts the game, and you type the displayed function or method name.
 2:After you finish typing all the displayed characters, the text changes, and a new set of characters appears.
 3:Clearing a certain number of questions results in game clear!
 
