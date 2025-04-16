@@ -19,3 +19,6 @@ Playing this game allows you to develop your typing speed and accuracy.
 
 ##環境  environment
 言語 language  Javascript html.css
+
+##今後の実装について  Future Development Plans
+問題について、他のプログラミング言語も増やしていく予定です。 With regard to the problem, we are going to include further elements.
