@@ -197,6 +197,3 @@ document.addEventListener('keydown', (e) => {
 replayBtn.addEventListener('click', () => {
   window.location.reload();
 });
-// ゲーム開始時の処理
-startTime = Date.now();
-// const intervalId = setInterval(timer, 10);
