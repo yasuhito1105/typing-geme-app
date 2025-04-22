@@ -21,4 +21,6 @@ Playing this game allows you to develop your typing speed and accuracy.
 言語 language  Javascript html.css
 
 ##今後の実装について  Future Development Plans
-問題について、他のプログラミング言語も増やしていく予定です。 With regard to the problem, we are going to include further elements.
+問題について、他のプログラミング言語のモードも増やしていく予定です。 
+
+Regarding the problem, we plan to add modes for other programming languages as well.
