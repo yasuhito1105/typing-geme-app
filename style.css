@@ -95,3 +95,10 @@ body {
   top: 30%;
   left:47%;
 }
+.score {
+  font-size: 30px;
+  margin-bottom: 50px;
+  position: absolute;
+  top: 25%;
+  left: 45%;
+}

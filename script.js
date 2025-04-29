@@ -92,7 +92,7 @@ const questions = [
   // 'JavaScript',
   // 'document',
   // 'const',
-  'let',
+  // 'let',
   // 'var',//varはあまり使われてない定数
   // 'console',
   // 'addEventListener',
@@ -100,9 +100,10 @@ const questions = [
   // 'split',
   // 'Math',
   // 'click',
-  'log',
+  // 'log',
   // 'function',
-  'for',
+  // 'for',
+  'a',
 ];
 
 const typeDisplay = document.getElementById('typeDisplay');
@@ -122,6 +123,10 @@ let startTime;
 let time;
 let intervalId;
 let gameStarted = false; // ゲームが開始されたかどうかを追跡する変数
+let score = 0;//スコアを初期化
+const scoreDisplay = document.getElementById('score');//スコアの表示の取得
+
+
 
 
 // タイマー関数
@@ -173,12 +178,17 @@ typeArea.addEventListener('input', (e) => {
     typeDisplay.textContent = typeDisplayTextWords.join('');
     typeQuestion.textContent = typeInputTextWords.join('');
 
+    score += 10; // 正解で10点加算
+    scoreDisplay.textContent = `スコア: ${score}`; // スコア表示を更新
+
     // 全ての文字が正しく入力されたら新しい問題文をセットする関数
     if (typeInputTextWords.length <= 0) {
         if (questions.length <= 0) {
           clearInterval(intervalId);
           game.classList.add('hidden'); //ゲーム画面を非表示
           message.classList.remove('hidden'); //終了メッセージの表示
+          // message.textContent = `あなたのスコアは ${score}点でした`;
+
         } else {
           setQuestion(); //新しい問題文をセット
         }
