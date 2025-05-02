@@ -187,7 +187,12 @@ typeArea.addEventListener('input', (e) => {
           clearInterval(intervalId);
           game.classList.add('hidden'); //ゲーム画面を非表示
           message.classList.remove('hidden'); //終了メッセージの表示
-          // message.textContent = `あなたのスコアは ${score}点でした`;
+          message.innerHTML = `ゲームクリア！<br/>お疲れ様でした!<br />あなたのスコアは ${score} 点です。<br /><button id="replayBtn" class="button">もう一度プレイする</button>`;
+
+          const replayButton = document.getElementById('replayBtn');
+          replayButton.addEventListener('click', () => {
+            window.location.reload();
+          });
 
         } else {
           setQuestion(); //新しい問題文をセット
@@ -207,3 +212,4 @@ document.addEventListener('keydown', (e) => {
 replayBtn.addEventListener('click', () => {
   window.location.reload();
 });
+

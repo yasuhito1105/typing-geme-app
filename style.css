@@ -3,7 +3,6 @@
 }
 header{
   position: fixed;
-  justify-content: center;
   top: 10%;
   left: 25%;
   padding-top: 10px;
@@ -81,6 +80,7 @@ body {
 
 .button {
   padding: 10px 20px;
+  position: absolute;
   background-color: #14d2a9;
   color: #fff;
   border: none;
