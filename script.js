@@ -127,8 +127,6 @@ let score = 0;//スコアを初期化
 const scoreDisplay = document.getElementById('score');//スコアの表示の取得
 
 
-
-
 // タイマー関数
 const timer = () => {
   time = ((Date.now() - startTime) / 1000).toFixed(2);
@@ -172,8 +170,6 @@ typeArea.addEventListener('input', (e) => {
     typeDisplayTextWords.push(typeInputTextWords[0]);
     typeInputTextWords.shift();
 
-    // console.log('入力済み:' + typeDisplayTextWords);
-    // console.log('未入力:' + typeInputTextWords)
 
     typeDisplay.textContent = typeDisplayTextWords.join('');
     typeQuestion.textContent = typeInputTextWords.join('');
@@ -193,11 +189,9 @@ typeArea.addEventListener('input', (e) => {
           replayButton.addEventListener('click', () => {
             window.location.reload();
           });
-
         } else {
           setQuestion(); //新しい問題文をセット
         }
-        // console.log('クリア');
       }
   }
 });
