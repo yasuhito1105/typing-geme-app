@@ -1,4 +1,5 @@
-Application name：_タイピングゲーム_
+アプリケーションの名前：_タイピングゲーム_
+Application name：_Typing Game__
 
 Start to key down space or enter key   let's typing！
 ##概要 outline
