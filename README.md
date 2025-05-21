@@ -1,7 +1,9 @@
 アプリケーションの名前：_タイピングゲーム_
 Application name：_Typing Game__
 
+スペースキーまたはエンターキーを押して、タイピングを始めましょう！
 Start to key down space or enter key   let's typing！
+
 ##概要 outline
 このゲームは『Javascript』の関数名やメソッド名をタイピングするゲームです。
 プレイを通じてタイピングの速度と正確性を養うことができます。
@@ -18,7 +20,7 @@ Playing this game allows you to develop your typing speed and accuracy.
 2:After you finish typing all the displayed characters, the text changes, and a new set of characters appears.
 3:Clearing a certain number of questions results in game clear!
 
-##スコアについて
+##スコアについて  About scores
 一つの単語につき10点です。
 
 10 points are awarded for each correct word.
