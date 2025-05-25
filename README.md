@@ -1,6 +1,7 @@
 アプリケーションの名前：_タイピングゲーム_
 Application name：_Typing Game__
 
+##開始方法 How to start
 スペースキーまたはエンターキーを押して、タイピングを始めましょう！
 Start to key down space or enter key   let's typing！
 
