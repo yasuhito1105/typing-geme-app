@@ -184,7 +184,7 @@ typeArea.addEventListener('input', (e) => {
           game.classList.add('hidden'); //ゲーム画面を非表示
           message.classList.remove('hidden'); //終了メッセージの表示
           message.innerHTML = `ゲームクリア！<br/>お疲れ様でした!<br />あなたのスコアは ${score} 点です。<br /><button id="replayBtn" class="button">もう一度プレイする</button>`;
-          
+
           //  もう一度プレイするボタンの機能
           const replayButton = document.getElementById('replayBtn');
           replayButton.addEventListener('click', () => {
