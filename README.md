@@ -1,5 +1,5 @@
 アプリケーションの名前：_タイピングゲーム_
-Application name：_Typing Game__
+Application name：_Typing Game_
 
 ##開始方法 How to start
 スペースキーまたはエンターキーを押して、タイピングを始めましょう！
@@ -30,6 +30,6 @@ Playing this game allows you to develop your typing speed and accuracy.
 言語 language  Javascript html.css
 
 ##今後の実装について  Future Development Plans
-問題について、他のプログラミング言語のモードも増やしていく予定です。 
+問題について、他のプログラミング言語のモードも増やしていく予定です。
 
 Regarding the problem, we plan to add modes for other programming languages as well.
