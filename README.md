@@ -33,3 +33,8 @@ Playing this game allows you to develop your typing speed and accuracy.
 問題について、他のプログラミング言語のモードも増やしていく予定です。
 
 Regarding the problem, we plan to add modes for other programming languages as well.
+
+##作成の背景  background
+タイピング技術の向上を目的としている。プログラミングの関数やメソッドの打ち間違いを減らす事で円滑に作業ができるよう想いを込めて制作しています。
+
+Designed to enhance typing skills for developers. This project was created with the goal of helping users reduce typos in functions and methods, leading to a smoother and more efficient coding workflow.
