@@ -27,7 +27,7 @@ Playing this game allows you to develop your typing speed and accuracy.
 10 points are awarded for each correct word.
 
 ##環境  environment
-言語 language  Javascript html.css
+プログラミング言語（Languages）:JavaScript HTML/css
 
 ##今後の実装について  Future Development Plans
 問題について、他のプログラミング言語のモードも増やしていく予定です。
