@@ -29,8 +29,11 @@ Playing this game allows you to develop your typing speed and accuracy.
 ##環境  environment
 プログラミング言語（Languages）:JavaScript HTML/css
 
-##今後の実装について  Future Development Plans
+##今後の実装について  Future Development Plans  ## アイデア・備忘録 (Ideas)
+誤入力をカウントする機能を検討中
 問題について、他のプログラミング言語のモードも増やしていく予定です。
+
+Considering a function to count input errors.
 
 Regarding the problem, we plan to add modes for other programming languages as well.
 
