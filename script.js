@@ -203,5 +203,3 @@ document.addEventListener('keydown', (e) => {
     e.preventDefault(); //デフォルトの動作をキャンセル
   }
 });
-
-
