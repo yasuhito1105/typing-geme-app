@@ -174,8 +174,12 @@ typeArea.addEventListener('input', (e) => {
     typeDisplay.textContent = typeDisplayTextWords.join('');
     typeQuestion.textContent = typeInputTextWords.join('');
 
-    score += 10; // 正解で10点加算
-    scoreDisplay.textContent = `スコア: ${score}`; // スコア表示を更新
+    // 正解で10点加算
+    score += 10;
+
+    // スコア表示を更新
+    scoreDisplay.textContent = `スコア: ${score}`;
+
 
     // 全ての文字が正しく入力されたら新しい問題文をセットする関数
     if (typeInputTextWords.length <= 0) {
@@ -196,6 +200,7 @@ typeArea.addEventListener('input', (e) => {
       }
   }
 });
+
 // 最初のエンターかスペースでスタートする記述
 document.addEventListener('keydown', (e) => {
   if (!gameStarted && (e.key === 'Enter' || e.key === ' ')) {
