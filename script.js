@@ -87,6 +87,7 @@
 // renderNextSentence();
 
 // ここからAPIを使わないコードを書く
+
 // 表示する問題文の記述
 const questions = [
   // 'JavaScript',
@@ -116,7 +117,6 @@ const timerLabel = document.getElementById('timer');
 
 let typeDisplayTextWords = [];
 let typeInputTextWords = [];
-// let typeInputTextWords = [];let typeInputTextWord = typeInput.textContent.split('');
 let currentKer;
 let currentText;
 let startTime;
@@ -125,7 +125,6 @@ let intervalId;
 let gameStarted = false; // ゲームが開始されたかどうかを追跡する変数
 let score = 0;//スコアを初期化
 const scoreDisplay = document.getElementById('score');//スコアの表示の取得
-
 
 // タイマー関数
 const timer = () => {
@@ -170,7 +169,6 @@ typeArea.addEventListener('input', (e) => {
     typeDisplayTextWords.push(typeInputTextWords[0]);
     typeInputTextWords.shift();
 
-
     typeDisplay.textContent = typeDisplayTextWords.join('');
     typeQuestion.textContent = typeInputTextWords.join('');
 
@@ -187,7 +185,8 @@ typeArea.addEventListener('input', (e) => {
           clearInterval(intervalId);
           game.classList.add('hidden'); //ゲーム画面を非表示
           message.classList.remove('hidden'); //終了メッセージの表示
-          message.innerHTML = `ゲームクリア！<br/>お疲れ様でした!<br />あなたのスコアは ${score} 点です。<br /><button id="replayBtn" class="button">もう一度プレイする</button>`;
+          message.innerHTML = `ゲームクリア！<br/>お疲れ様でした!<br />あなたのスコアは ${score} 点です。
+                                           <br /><button id="replayBtn" class="button">もう一度プレイする</button>`;
 
           //  もう一度プレイするボタンの機能
           const replayButton = document.getElementById('replayBtn');
