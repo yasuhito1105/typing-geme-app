@@ -94,7 +94,8 @@ const questions = [
   // 'document',
   // 'const',
   // 'let',
-  // 'var',//varはあまり使われてない定数
+  //varはあまり使われてない定数
+  // 'var',
   // 'console',
   // 'addEventListener',
   // 'getElementById',
@@ -122,9 +123,12 @@ let currentText;
 let startTime;
 let time;
 let intervalId;
-let gameStarted = false; // ゲームが開始されたかどうかを追跡する変数
-let score = 0;//スコアを初期化
-const scoreDisplay = document.getElementById('score');//スコアの表示の取得
+// ゲームが開始されたかどうかを追跡する変数
+let gameStarted = false;
+//スコアを初期化
+let score = 0;
+//スコアの表示の取得
+const scoreDisplay = document.getElementById('score');
 
 // タイマー関数
 const timer = () => {
@@ -158,12 +162,14 @@ const startGame = () => {
   gameStarted = true;
   startTime = Date.now();
   intervalId = setInterval(timer, 10);
-  typeArea.focus(); // テキストエリアにフォーカスを当てる
+  // テキストエリアにフォーカスを当てる
+  typeArea.focus();
 };
 
 
 typeArea.addEventListener('input', (e) => {
-  if (!gameStarted) return; // ゲームが開始されていない場合は何もしない
+  // ゲームが開始されていない場合は何もしない
+  if (!gameStarted) return;
 
   if (typeInputTextWords[0] === e.data) {
     typeDisplayTextWords.push(typeInputTextWords[0]);
@@ -183,8 +189,10 @@ typeArea.addEventListener('input', (e) => {
     if (typeInputTextWords.length <= 0) {
         if (questions.length <= 0) {
           clearInterval(intervalId);
-          game.classList.add('hidden'); //ゲーム画面を非表示
-          message.classList.remove('hidden'); //終了メッセージの表示
+          //ゲーム画面を非表示
+          game.classList.add('hidden');
+          //終了メッセージの表示
+          message.classList.remove('hidden');
           message.innerHTML = `ゲームクリア！<br/>お疲れ様でした!<br />あなたのスコアは ${score} 点です。
                                            <br /><button id="replayBtn" class="button">もう一度プレイする</button>`;
 
@@ -194,7 +202,8 @@ typeArea.addEventListener('input', (e) => {
             window.location.reload();
           });
         } else {
-          setQuestion(); //新しい問題文をセット
+          //新しい問題文をセット
+          setQuestion();
         }
       }
   }
@@ -204,6 +213,7 @@ typeArea.addEventListener('input', (e) => {
 document.addEventListener('keydown', (e) => {
   if (!gameStarted && (e.key === 'Enter' || e.key === ' ')) {
     startGame();
-    e.preventDefault(); //デフォルトの動作をキャンセル
+    //デフォルトの動作をキャンセル
+    e.preventDefault();
   }
 });
